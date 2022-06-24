@@ -1,38 +1,197 @@
-.App {
-  text-align: center;
+body {
+  background-color: #18a0fb44;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Estilos nav y logos */
+.navbar-dark {
+  background-color: #005b96;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fade-enter {
+  opacity: 0;
+  transform: scale(0.9);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.img_logo {
+  width: 5%;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.Title {
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: 40px;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: 30px;
+}
+
+.cartShop {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.cartShopImg {
+  font-size: 35px;
+  margin-left: -6px;
+}
+
+/* Estilos para el banner */
+.jumbotron {
+  padding: 20px 10px 10px 10px;
+  margin: 0px 100px;
+  background-color: #18a0fb8a;
+  color: rgb(61, 61, 61);
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+h1 {
+  font-weight: bold;
+  font-family: cursive;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.info_banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text_banner {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.imgs {
+  width: 25%;
+  margin: 0 10px 15px 15px;
+}
+
+.pLoader {
+  font-weight: bold;
+  font-size: 45px;
+  color: #041a62;
+  display: flex;
+  margin: 50px 100px 50px 100px;
+  font-family: cursive;
+}
+
+.containerTwo {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.pText {
+  margin: 0px 20px 0px 0px;
+}
+
+/* Estilos de las cartas */
+.container_card {
+  background-color: #fcd66c;
+  border-radius: 15px;
+  width: 100%;
+  margin: 5%;
+  padding: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.container_cardTitle {
+  font-weight: bold;
+  font-size: 20px;
+  color: #2f2f2f;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.container_cardText {
+  font-size: 18px;
+  color: #2f2f2f;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Modal para el carro de compras */
+.modalCartShop {
+  background-color: #fcd66c;
+  border-radius: 15px;
+  width: 100%;
+  margin: 5%;
+  padding: 10px;
+  justify-content: center;
+}
+
+/* Estilos funcionalidades */
+.row-header {
+  margin: 0px auto;
+  padding: 0px auto;
+}
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
+}
+
+.footer {
+  background-color: #d1c4e9;
+  margin: 0px auto;
+  padding: 20px 0px 20px 0px;
+}
+
+.button {
+  background-color: #1471af;
+  border: none;
   color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btnCompra {
+  background-color: #1471af;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
